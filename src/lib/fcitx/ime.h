@@ -582,6 +582,17 @@ extern "C" {
         int index);
 
     /**
+     * @brief choose candidate total by index
+     *
+     * @param instance instance
+     * @param index idx
+     * @return INPUT_RETURN_VALUE
+     **/
+    void FcitxInstanceChooseCandidateTotalByIndex(
+        struct _FcitxInstance* instance,
+        int index);
+
+    /**
      * send a new key event to client
      *
      * @param instance fcitx instance
